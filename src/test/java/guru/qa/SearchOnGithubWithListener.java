@@ -22,7 +22,7 @@ public class SearchOnGithubWithListener extends BaseTest {
     @Owner("loarlam")
     @Severity(SeverityLevel.TRIVIAL)
     @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure")
-    void SearchingIssueOnGithubWithListener() {
+    void searchingIssueOnGithubWithListener() {
         searchLine.setValue("selenide").pressEnter();
         repositoryResult.first().click();
         searchTextInUnderline.click();

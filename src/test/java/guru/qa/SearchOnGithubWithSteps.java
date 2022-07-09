@@ -23,7 +23,7 @@ public class SearchOnGithubWithSteps extends BaseTest {
     @Owner("loarlam")
     @Severity(SeverityLevel.TRIVIAL)
     @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure с лямбда шагами")
-    void SearchingIssueOnGithubWithSteps() {
+    void searchingIssueOnGithubWithSteps() {
         step("На главной странице github вводим в поисковой строке \"selenide\" и нажимаем Enter", () -> {
             searchLine.setValue("selenide").pressEnter();
         });
