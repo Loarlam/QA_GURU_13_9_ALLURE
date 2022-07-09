@@ -2,6 +2,9 @@ package guru.qa;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +19,8 @@ public class SearchOnGithubWithListener extends BaseTest {
     private ElementsCollection repositoryResult = $$("a.v-align-middle");
 
     @Test
+    @Owner("loarlam")
+    @Severity(SeverityLevel.TRIVIAL)
     @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure")
     void SearchingIssueOnGithubWithListener() {
         searchLine.setValue("selenide").pressEnter();
