@@ -24,7 +24,7 @@ public class SearchOnGithubWithAnnotationSteps extends BaseTest {
     @Test
     @Owner("loarlam")
     @Severity(SeverityLevel.TRIVIAL)
-    @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure с лямбда шагами")
+    @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure, включающий степы с аннотациями")
     void SearchingIssueOnGithubWithAnnotionSteps() {
         stepsWithAnnotation.SearchingInSearchEngine(searchLine, textInSearchEngine)
                 .SelectingFirstElementOnPage(repositoryResult)
