@@ -20,7 +20,7 @@ public class SearchOnGithubWithSteps extends BaseTest {
     private ElementsCollection repositoryResult = $$("a.v-align-middle");
 
     @Test
-    @Owner("loarlam")
+    @Owner("Loarlam")
     @Severity(SeverityLevel.TRIVIAL)
     @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure с лямбда шагами")
     void searchingIssueOnGithubWithSteps() {

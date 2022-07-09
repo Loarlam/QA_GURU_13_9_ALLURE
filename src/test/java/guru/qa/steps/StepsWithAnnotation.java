@@ -39,7 +39,7 @@ public class StepsWithAnnotation {
         return this;
     }
 
-    @Attachment(value = "Мой любимый скриншот", type = "image/png", fileExtension = "png")
+    @Attachment(value = "Скриншоты страниц", type = "image/png", fileExtension = "png")
     public byte[] attachScreenshot() {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }

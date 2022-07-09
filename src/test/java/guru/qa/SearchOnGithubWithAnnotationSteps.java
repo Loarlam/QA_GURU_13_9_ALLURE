@@ -22,7 +22,7 @@ public class SearchOnGithubWithAnnotationSteps extends BaseTest {
     StepsWithAnnotation stepsWithAnnotation = new StepsWithAnnotation();
 
     @Test
-    @Owner("loarlam")
+    @Owner("Loarlam")
     @Severity(SeverityLevel.TRIVIAL)
     @DisplayName("Поиск названия Issue в github.com/selenide/selenide/issues. Отчёт в Allure, включающий степы с аннотациями")
     void searchingIssueOnGithubWithAnnotionSteps() {
